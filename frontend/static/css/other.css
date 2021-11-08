@@ -1,0 +1,226 @@
+.row {
+    display: flex;
+    height: 80px;
+    width: 85%;
+    margin: 1rem 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-row {
+    transition: display 1s, opacity 1s ease-in-out;
+}
+
+#binary-row {
+    margin-top: 2.5rem;
+    transition: display 1s, opacity 1s ease-in-out;
+}
+
+#binary {
+    color: #5a5555;
+}
+
+.quote {
+    font-style: italic;
+    text-align: center;
+    color: rgb(243, 243, 243);
+}
+
+.black-hole__container {
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-in-out;
+}
+
+.outer-ring {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    animation: spin-counter-clockwise 20s linear infinite;
+}
+
+.second-ring {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px dotted #fff;
+    box-shadow: rgb(223, 218, 212) 1px 1px 3px 0px inset, rgb(235, 233, 231) -1px -1px 6px 1px inset;
+    animation: spin 10s linear infinite;
+}
+
+.black-hole__wrapper {
+    background-color: #000103;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    filter: drop-shadow(2rem 2rem 0rem rgb(197, 186, 171));
+    animation: pulsate 6s linear infinite;
+}
+
+#black-hole {
+    background-color: #000103;
+    cursor: none;
+    position: absolute;
+    height: 199px;
+    width: 199px;
+    border-radius: 60%;
+    filter: drop-shadow(0rem 0rem 2rem rgb(179, 175, 171));
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: all 6s ease-in;
+}
+
+.matrix__grid {
+    display: none;
+    height: 60%;
+    min-height: 600px;
+    padding: 0 4rem;
+    align-items: center;
+    column-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.matrix__Ainv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: flex-end;
+    width: 60%;
+    height: 60%;
+    min-height: 220px;
+    min-width: 650px;
+    max-height: 260px;
+    max-width: 750px;
+    border-radius: 5%;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+.matrix__inverse--notation {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    right: -20px;
+    top: -30px;
+}
+
+.matrix__B {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    width: 40%;
+    height: 40%;
+    min-height: 150px;
+    min-width: 300px;
+    max-height: 200px;
+    max-width: 400px;
+}
+
+.matrix__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.matrix__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100px;
+    border-radius: 8%;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+.matrix__col:first-child {
+    margin-right: 4rem;
+}
+
+.poem__container {
+    opacity: 0;
+    width: 100%;
+    padding: 4rem 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: reveal 1s ease-in-out forwards;
+}
+
+.poem__wrapper {
+    line-height: 12px;
+    color:rgb(223, 218, 212);
+    font-weight: 300;
+    font-family: initial;
+}
+
+
+.p-title {
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+.number {
+    color: #fff;
+    font-size: 22px;
+}
+
+.input__row {
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+.input__field {
+    display: flex;
+    flex-direction: row;
+}
+
+.input__submit-btn {
+    margin-left: 1rem;
+    height: 45px;
+    width: 100px;
+}
+
+@keyframes reveal {
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        background-color: #000103;  
+    }
+
+    100% {
+        background-color: #080e14;
+    }
+}
+
+@keyframes spin-counter-clockwise {
+    100% { 
+        -webkit-transform: rotate(-360deg); 
+        transform:rotate(-360deg); 
+    } 
+}
+
+@keyframes spin { 
+    100% {
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}

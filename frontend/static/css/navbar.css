@@ -1,0 +1,50 @@
+.navbar__wrapper {
+    width: 100%;
+    max-width: 2000px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    transition: display .4s, opacity .4s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    min-width: 650px;
+    max-width: 900px;
+    position: absolute;
+    top: 10px;
+    padding: 2.5rem;
+}
+
+.navbar__list {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navbar__link {
+    padding: 8px 12px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: rgb(243, 243, 243);
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.navbar__link:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 4px;
+    background-color: #4754B3;
+}
+
+.navbar__link.active {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 4px;
+    background-color: #4754B3;
+}

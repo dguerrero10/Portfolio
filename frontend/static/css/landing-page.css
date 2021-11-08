@@ -1,0 +1,153 @@
+#game-btn {
+    width: 300px;
+    margin-top: 1rem;
+}
+
+.landing-page__grid {
+    height: 100%;
+    width: 100%;
+    padding: 0 4rem;
+    overflow: hidden;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+ 
+.text-container {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: reveal 1s linear forwards;
+}
+
+.answer {
+    color:rgb(243, 243, 243);
+    font-size: 24px;
+    opacity: 0;
+    animation: reveal 1s linear forwards;
+}
+
+.question {
+    color:rgb(243, 243, 243);
+    font-size: 24px;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: reveal 1s linear forwards;
+}
+
+.game-mode-layout {
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    animation: right-to-left 1s ease-in-out;
+}
+
+.landing-page__sub-grid {
+    opacity: 0;
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: auto auto;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    animation: reveal 1s linear forwards;
+}
+
+.skill-container {
+    width: 350px;
+    height: 250px;
+    background-color: #1F1A24;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all .3s linear;
+}
+
+.wrong-answer {
+    background-color: #AC391C;
+}
+
+.correct-answer {
+    background-color: #60B104;
+    animation: left-to-right .6s ease-in-out;
+}
+
+.two-btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#skill-container-1 {
+    animation: left-to-right .6s ease-in-out;
+}
+
+#skill-container-2 {
+    animation: up-down .5s ease-in-out;
+}
+
+#skill-container-3 {
+    animation: down-up .5s ease-in-out;
+}
+
+#skill-container-4 {
+    animation: right-to-left .6s ease-in-out;
+}
+
+.skill-container-grow {
+    transform: scale(1.15);
+}
+
+.skill-container-shrink {
+    transform: scale(.5);
+}
+
+.landing-page__header {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: 64px;
+    font-weight: 800;
+    color: rgb(243, 243, 243);
+    text-align: center;
+}
+
+.landing-page__para {
+    font-size: 24px;
+    font-weight: 600;
+    color: #5a5555;
+    text-align: center;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-30%);
+    }
+}
+
+@keyframes right-to-left {
+    0% {
+        transform: translateX(30%);
+    }
+}
+
+@keyframes reveal {
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes down-up {
+    0% {
+        transform: translateY(50%);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-50%);
+    }
+}

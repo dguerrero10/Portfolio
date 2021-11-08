@@ -1,0 +1,138 @@
+.contact-me__grid {
+    height: 90vh;;
+    max-width: 1800px;
+    padding: 0 4rem;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 60px 1fr;
+}
+
+.contact-me__header {
+    font-size: 34px;
+    margin: 0;
+    font-weight: 600;
+    color: rgb(243, 243, 243);
+}
+
+.contact-me__para {
+    font-size: 18px;
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #5a5555;
+}
+
+#feedback-majority {
+    opacity: 0;
+    animation: fade-in-up .4s ease-in-out forwards;
+    text-align: center;
+    color: lightgreen;
+    font-size: 64px;
+}
+
+.contact-me__poll-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 450px;
+}
+
+.poll-panel__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.poll-panel {
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 8px;
+    background-color: #1F1A24;
+    margin-bottom: 1.5rem;
+    transition: all .2s ease-in;
+    animation: fade-in .7s linear forwards;
+    opacity: 0;
+}
+
+.poll-panel:nth-child(1) {animation-delay: .2s;}
+.poll-panel:nth-child(2) {animation-delay: .3s;}
+.poll-panel:nth-child(3) {animation-delay: .4s;}
+.poll-panel:nth-child(4) {animation-delay: .5s;}
+
+.poll-panel:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.poll-panel:active {
+    background-color: #1a1420;
+}
+
+.poll-answer {
+    color: rgb(243, 243, 243);
+}
+
+.divider-line {
+    height: 70%;
+    width: 2px;
+    background-color: #15191f;
+}
+
+.contact-me__form-container {
+    width: 50%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form * {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.form__textarea {
+    resize: none;
+    height: 140px
+}
+
+.form__row {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.form__btn {
+    width: 100%;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,159 @@
+.resume__grid--wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.resume__grid {
+    width: 80%;
+    padding: 4rem 8rem;
+    display: grid;
+    column-gap: 3rem;
+    grid-template-columns: .5fr 2fr;
+}
+
+.resume__sidebar {
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #4754b30c;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.resume__sidebar--col, .resume__sidebar--section-catg {
+    padding: 1rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.resume__sidebar--icon-img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+}
+
+.resume__header--lg, .resume__header--sm, .resume__sidebar--section-catg {
+    color: #fff;
+    margin: .25rem 0;
+}
+
+.resume__sidebar--section-catg {
+    color: #4754b3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.resume__header--sm {
+    color: #5a5555;
+}
+
+.resume__sidebar--section-p, .resume__sidebar--section-skills  {
+    color: #fff;
+    margin: 0 0 .5rem 0;
+}
+
+.resume__sidebar--section-skills {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.resume__sidebar--section-p-sm {
+    color: #5a5555;
+    margin: 0;
+    font-size: 14px;
+}
+
+.resume__body--row {
+    padding: 1rem 0; 
+}
+
+.resume__body--p {
+    color: #fff;
+}
+
+.resume__body--section-row {
+    background-color: #4754b30c;
+    padding: .75rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.resume__body--section-catg {
+    color: #4754b3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: .25rem 0;
+}
+
+#date-1 {
+    grid-area: date-1;
+}
+
+#date-2 {
+    grid-area: date-2;
+}
+
+#date-3 {
+    grid-area: date-3;
+}
+
+#exp-1 {
+    grid-area: exp-1;
+}
+
+#exp-2 {
+    grid-area: exp-2;
+}
+
+#exp-3 {
+    grid-area: exp-3;
+}
+
+.resume__body-grid {
+    display: grid;
+    grid-template-columns: .5fr 1.25fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "date-1 exp-1"
+    "date-2 exp-2"
+    "date-3 exp-3";
+}
+
+.resume__body--section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: .5rem 0;
+    border-bottom: 1px solid #4754b32a;
+}
+
+.resume__body--title, .resume__body--title-sm {
+    color: #4754b3;;
+    margin: .25rem 0;
+}
+
+.resume__body--title-sm {
+    color: #fff;
+}
+
+.resume__body--date {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.resume__body--list {
+    color: #5a5555;;
+    padding-left: 15px;
+}
+
+.resume__body--list-item {
+    line-height: 1.75;
+}
