@@ -19,8 +19,20 @@ export default class extends AbstractView {
                     </div>
                 </div>
             </div>
-            <div id="binary-row" class="row">
-                <p id="binary"></p>    
+            <div id="_terminal" class="terminal__container">
+                <div class="terminal">
+                    <div class="terminal__bar">
+                        <span id="terminal__close"></span>
+                        <p class="terminal__user">root@Machine: ~</p>
+                    </div>
+                    <div class="terminal__wrapper">
+                        <div id="c-1" class="terminal__start">
+                            <span class="terminal__root">root@Machine</span>
+                            <span class="terminal__tilde">~</span> 
+                            <span class="terminal__dollar-sign">$<input id="in-1" class="terminal__command" type="text"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="matrix__grid">

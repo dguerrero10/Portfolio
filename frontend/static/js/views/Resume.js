@@ -55,6 +55,29 @@ export default class extends AbstractView {
                     <p class="resume__sidebar--section-skills">Accountable</p>
                 </div>
             </div>
+            <div class="resume__interests">
+                <h4 class="resume__sidebar--section-catg">Interests</h4>
+                <div class="resume__sidebar--col">
+                    <p class="resume__sidebar--section-p">Creative Writing</p>
+                    <p class="resume__sidebar--section-p-sm">
+                        I enjoy writing poetry and short stories.
+                    </p>
+                </div>
+                <div class="resume__sidebar--col">
+                <p class="resume__sidebar--section-p">Math</p>
+                <p class="resume__sidebar--section-p-sm">
+                    I like to study math and find ways to apply what I've learned through programming projects.
+                    For me, math is another expression of creativity.
+                </p>
+            </div>
+            <div class="resume__sidebar--col">
+            <p class="resume__sidebar--section-p">Being Human</p>
+            <p class="resume__sidebar--section-p-sm">
+                Just like anyone else, I relish the relationships I have with others, and love spending time
+                with the people I care about.
+            </p>
+        </div>
+            </div>
             <div class="resume__body">
                 <div class="resume__body--row">
                     <p class="resume__body--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in quis
@@ -65,15 +88,15 @@ export default class extends AbstractView {
                     <h4 class="resume__body--section-catg">Experience</h4>
                 </div>
                 <div class="resume__body-grid">
-                    <div id="date-1" class="resume__body--date">
+                    <p id="date-1" class="resume__body--date">
                         01-2020 - Present
-                    </div>
-                    <div id="date-2" class="resume__body--date">
+                    </p>
+                    <p id="date-2" class="resume__body--date">
                         01-2020 - Present
-                    </div>
-                    <div id="date-3" class="resume__body--date">
+                    </p>
+                    <p id="date-3" class="resume__body--date">
                         01-2020 - Present
-                    </div>
+                    </p>
                     <div id="exp-1" class="resume__body--section">
                         <h2 class="resume__body--title">
                             Lead Developer
@@ -124,6 +147,34 @@ export default class extends AbstractView {
                                 Quaerat architecto optio ut impedit quisquam cupiditate dolorum nulla, ipsum rem aut?
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="resume__projects">
+                <div class="resume__projects--section-row">
+                    <h4 class="resume__projects--section-catg">Projects</h4>
+                </div>
+                <div class="resume__projects-grid">
+                    <div id="name-1" class="resume__projects--name">
+                        <h3 class="resume__projects--header">Inside4</h3>
+                        <p class="resume__projects--tech">Inside4</p>
+                    </div>
+                    <div id="name-2" class="resume__projects--name">
+                        <h3 class="resume__projects--header">Inside4</h3>
+                        <p class="resume__projects--tech">Inside4</p>
+                    </div>
+                    <div id="name-3" class="resume__projects--name">
+                        <h3 class="resume__projects--header">Inside4</h3>
+                        <p class="resume__projects--tech">Inside4</p>
+                    </div>
+                    <div id="explanation-1" class="resume__projects--explanation">
+                        <p class="resume__projects--synop">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex laborum asperiores aliquid soluta obcaecati deserunt vero nam temporibus delectus?</p>
+                    </div>
+                    <div id="explanation-2" class="resume__projects--explanation">
+                        <p class="resume__projects--synop">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex laborum asperiores aliquid soluta obcaecati deserunt vero nam temporibus delectus?</p>
+                    </div>
+                    <div id="explanation-3" class="resume__projects--explanation">
+                        <p class="resume__projects--synop">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex laborum asperiores aliquid soluta obcaecati deserunt vero nam temporibus delectus?</p>
                     </div>
                 </div>
             </div>
