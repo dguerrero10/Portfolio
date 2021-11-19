@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 const server = http.createServer(app);
 
-mongoose.connect('mongodb+srv://DavidAbdouGuerrero:RR5iGUj1XVejkpHe@cluster0.iwsz7.mongodb.net/Portfolio?retryWrites=true&w=majority',
+mongoose.connect('DB_STRING',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
